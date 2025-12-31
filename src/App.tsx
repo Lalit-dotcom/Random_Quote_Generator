@@ -26,7 +26,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="container">
-        <h1 className="heading">{advice}</h1>
+        <h1 className="heading">{advice || "Don't eat too much Icecream"}</h1>
         <button onClick={() => fetchAdvice()}>Get Advice</button>
       </div>
     </div>
